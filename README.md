@@ -1,9 +1,9 @@
-# <h1 align=center> **STEAM MACHINE LEARNING ** </h1>
+# <h1 align=center> **STEAM MACHINE LEARNING** </h1>
 # <h1 align=center> **PROYECTO INDIVIDUAL Nº1** </h1>
 # <h1 align=center> **PABLO BETI** </h1>
 
 <p align="center">
-  <img src="src/STEAM1.JFIF">
+  <img src="src/steam1.png">
 </p>
 
 ## Introducción
