@@ -12,33 +12,50 @@
 
 ## Propuesta
 Por medio de la disponibilizacion de datos a traves de un trabajo de ETL y un EDA se modelo un sistema de recomendacion en base a la similitud del coseno, utilizando la libreria scikit learn.
-Dicho trabajo se puso a disposicion de consultas mediante una API
+Dicho trabajo se puso a disposicion de consultas mediante una API subida en Render. Ademas de una serie de consultas solicitadas.
 
+def PlayTimeGenre( genero : str ): Debe devolver año con mas horas jugadas para dicho género.
 
+def UserForGenre( genero : str ): Debe devolver el usuario que acumula más horas jugadas para el género dado y una lista de la acumulación de horas jugadas por año.
+
+def UsersRecommend( año : int ): Devuelve el top 3 de juegos MÁS recomendados por usuarios para el año dado. (reviews.recommend = True y comentarios positivos/neutrales)
+
+def UsersNotRecommend( año : int ): Devuelve el top 3 de juegos MENOS recomendados por usuarios para el año dado. (reviews.recommend = False y comentarios negativos)
+
+def sentiment_analysis( año : int ): Según el año de lanzamiento, se devuelve una lista con la cantidad de registros de reseñas de usuarios que se encuentren categorizados con un análisis de sentimiento.
+
+def recomendacion_juego( id de producto ): Ingresando el id de producto, deberíamos recibir una lista con 5 juegos recomendados similares al ingresado.
+
+def recomendacion_usuario( id de usuario ): Ingresando el id de un usuario, deberíamos recibir una lista con 5 juegos recomendados para dicho usuario.
 
 # Conclusión
 
-Este proyecto brinda una visión fundamentada para abordar las oportunidades y desafíos del mercado de criptoactivos, al explorar indicadores clave como la capitalización de mercado, el volumen de operaciones y la tecnología subyacente, hemos seleccionado un grupo diverso de criptomonedas con base en su estabilidad y potencial de crecimiento. 
+En este proyecto se posiciono y cumplio las funciones de un data Engine, realizando las limpiezas de los datasets provistos, dicha limpieza se encuentra en el notebook **ETL** y una descripcion de los datos y del desarrollo de la funcion de machine learning en el notebook de **EDA_ML**.
 
-La evaluación detallada de KPIs como el ROI, la media móvil y el RSI ha proporcionado una base sólida para comprender patrones y tendencias a lo largo del tiempo. Las recomendaciones resultantes, centradas en la identificación de tendencias alcistas, la diversificación de la cartera y la gestión del riesgo, subrayan la importancia de la educación continua y la toma de decisiones informadas en un mercado dinámico y en constante evolución. 
+# LINKS
+Dejo a disposicion el link del video en el que se muestra como quedo el servicio de consultas de la API subida a render 
+Dejo video demostracion en el siguiente link .
 
-Este proyecto no solo ofrece datos y análisis, sino que capacita a los inversores con el conocimiento necesario para navegar con confianza en el  mundo de las criptomonedas y aprovechar su potencial a largo plazo.
+
 
 ## Tecnologias utilizadas:
-**Python - Power BI - Pandas - Coingecko** 
+**Python - Scikit Learn - Pandas - Fastapi - Render** 
 
 <body>
   <div class="logo-container">
-    <img class="logo" src="src/python.png" width="100" height="100">
+    <img class="logo" src="src/Python-logo-notext.svg.png" width="100" height="100">
   </div>
     <div class="logo-container">
-    <img class="logo" src="src/power.png" width="200" height="80">
+    <img class="logo" src="src/fastapi.png" width="200" height="80">
   </div>
   <div class="logo-container">
     <img class="logo" src="src/pandas.png" width="200" height="100">
   </div>
   <div class="logo-container">
     <img class="logo" src="src/scikit.png" width="200" height="100">
+  </div>
+    <div class="logo-container">
+    <img class="logo" src="src/render.png" width="200" height="100">
   </div>
 
 </body>
