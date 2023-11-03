@@ -10,8 +10,8 @@ app = FastAPI()
 
 
 # Carga el DataFrame desde el archivo CSV
-consulta1 = pd.read_csv('dataset/consulta.csv')
-consulta2 = pd.read_csv('dataset/consulta.csv')
+consulta1 = pd.read_csv('dataset/consulta1.csv')
+consulta2 = pd.read_csv('dataset/consulta2.csv')
 steam_games = pd.read_csv('dataset/recomendacion.csv')
 
 @app.get("/playtime_genre/{genero}")
