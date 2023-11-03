@@ -3,7 +3,7 @@
 # <h1 align=center> **PABLO BETI** </h1>
 
 <p align="center">
-  <img src="src/steam1.png">
+  <img src="src/steam.jpeg">
 </p>
 
 ## Introducción
